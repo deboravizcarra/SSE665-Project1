@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `tysql`.`orderitems`.`order_num` AS `order_num`,`tysql`.`orderitems`.`prod_id` AS `prod_id`,`tysql`.`orderitems`.`quantity` AS `quantity`,`tysql`.`orderitems`.`item_price` AS `item_price`,`tysql`.`orderitems`.`quantity` * `tysql`.`orderitems`.`item_price` AS `expanded_price` from `tysql`.`orderitems`
+md5=c75739d0cc22cbf0d77bce0cfab08537
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=2018-05-30 01:38:39
+create-version=2
+source=SELECT order_num,\n	   prod_id, \n	   quantity, \n       item_price,\n       quantity*item_price AS expanded_price\nFROM OrderItems
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `tysql`.`orderitems`.`order_num` AS `order_num`,`tysql`.`orderitems`.`prod_id` AS `prod_id`,`tysql`.`orderitems`.`quantity` AS `quantity`,`tysql`.`orderitems`.`item_price` AS `item_price`,`tysql`.`orderitems`.`quantity` * `tysql`.`orderitems`.`item_price` AS `expanded_price` from `tysql`.`orderitems`
+mariadb-version=100215
